@@ -28,7 +28,7 @@ export default function Social() {
         <GitHubLogoIcon className="h-5 w-5" />
       </Link>
       <Link
-        href="https://www.instagram.com/_mnis_94/"
+        href="https://www.instagram.com/_manish_.94/"
         className="hover:text-primary"
         target="_blank"
       >

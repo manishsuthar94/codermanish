@@ -57,7 +57,7 @@ export default function Page() {
               <GitHubLogoIcon className="h-7 w-7 m-1" />
             </Link>
             <Link
-              href="https://www.instagram.com/_mnis_94/"
+              href="https://www.instagram.com/_manish_.94/"
               className="hover:text-primary"
               target="_blank"
             >
