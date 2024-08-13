@@ -3,7 +3,12 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
-import { GitHubLogoIcon, InstagramLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+import {
+  GitHubLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+} from "@radix-ui/react-icons";
 
 export const metadata = {
   title: "Contact | Manish Suthar",
@@ -36,19 +41,40 @@ export default function Page() {
             </h1>
 
             <div className="flex gap-2 items-center justify-center bg-secondary rounded-full p-4 w-fit mx-auto">
-              <Link href="https://github.com/r2hu1" className="hover:text-primary">
-                <GitHubLogoIcon className="h-10 w-10" />
+              <Link
+                href="https://github.com/manishsuthar94/"
+                className="hover:text-primary"
+                target="_blank"
+              >
+                <GitHubLogoIcon className="h-7 w-7 m-1" />
               </Link>
-              <Link href="https://instagram.com/r.rah_ul" className="hover:text-primary">
-                <InstagramLogoIcon className="h-10 w-10" />
+              <Link
+                href="https://www.instagram.com/_mnis_94/"
+                className="hover:text-primary"
+                target="_blank"
+              >
+                <InstagramLogoIcon className="h-7 w-7 m-1" />
               </Link>
-              <Link href="https://linkedin.com/in/your-linkedin-id" className="hover:text-primary">
-                <LinkedInLogoIcon className="h-10 w-10" />
+              <Link
+                href="https://www.linkedin.com/in/manish-suthar-8395b4311/"
+                className="hover:text-primary"
+                target="_blank"
+              >
+                <LinkedInLogoIcon className="h-7 w-7 m-1" />
+              </Link>
+              <Link
+                href="https://x.com/ManishSuthar_94"
+                className="hover:text-primary"
+                target="_blank"
+              >
+                <TwitterLogoIcon className="h-7 w-7 m-1" />
               </Link>
             </div>
 
             <p className="text-[0.8rem] max-w-md mx-auto py-5">
-              An extensive display of my full-stack development skills, experiences, and projects, demonstrating my proficiency and commitment to coding
+              An extensive display of my full-stack development skills,
+              experiences, and projects, demonstrating my proficiency and
+              commitment to coding
               <span className="text-primary">.</span>
             </p>
           </div>

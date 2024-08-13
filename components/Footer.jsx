@@ -21,7 +21,7 @@ export default function Footer() {
         {" "}
         ©{new Date().getFullYear()}{" "}
         <a
-          href="https://github.com/r2hu1"
+          href="https://codermanish.vercel.app/"
           className="hover:underline hover:text-primary"
         >
           ManishSuthar
