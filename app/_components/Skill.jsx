@@ -14,6 +14,7 @@ import { SiBootstrap } from "react-icons/si"; // Added for Bootstrap
 import { SiVisualstudiocode } from "react-icons/si"; // Added for VS Code
 import { SiRedux } from "react-icons/si"; // Added for Redux
 import { SiGithub } from "react-icons/si"; // GitHub icon
+import { SiC } from "react-icons/si"; // Added for C language
 
 export default function Skills() {
   return (
@@ -36,13 +37,17 @@ export default function Skills() {
           <FaReact className="h-10 w-10" color="#5ed3f3" />
         </div>
 
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+        {/* <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+          <SiC className="h-10 w-10" color="#A8B9CC" />
+        </div> */}
+
+        {/* <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
           <DiPython className="h-10 w-10" color="#3776AB" />
         </div>
 
         <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
           <SiVisualstudiocode className="h-10 w-10" color="#007ACC" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

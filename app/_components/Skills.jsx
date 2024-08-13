@@ -14,6 +14,8 @@ import { SiBootstrap } from "react-icons/si"; // Added for Bootstrap
 import { SiVisualstudiocode } from "react-icons/si"; // Added for VS Code
 import { SiRedux } from "react-icons/si"; // Added for Redux
 import { SiGithub } from "react-icons/si"; // GitHub icon
+import { SiC } from "react-icons/si"; // Added for C language
+import { SiGit } from "react-icons/si"; // Added for Git
 
 export default function Skills() {
   return (
@@ -35,6 +37,10 @@ export default function Skills() {
         </div>
         <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
           <SiJavascript className="h-10 w-10" color="#ecda1d" />
+        </div>
+
+        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+          <SiC className="h-10 w-10" color="#A8B9CC" />
         </div>
 
         <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
@@ -70,6 +76,10 @@ export default function Skills() {
       <div className="flex gap-3 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
         <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
           <SiVisualstudiocode className="h-10 w-10" color="#007ACC" />
+        </div>
+
+        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+          <SiGit className="h-10 w-10" color="#F05032" />
         </div>
 
         <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
