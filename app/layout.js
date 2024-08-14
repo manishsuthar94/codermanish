@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/utils/theme-provider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -43,8 +44,8 @@ export default function RootLayout({ children }) {
           <Footer />
         </ThemeProvider>
 
+        <Analytics />
         <SpeedInsights />
-        
       </body>
     </html>
   );
