@@ -22,9 +22,8 @@ export default function Page() {
           Contact Me<span className="text-primary">.</span>
         </h1>
         <p className="text-xs mt-3">
-          Feel free to reach out if you have any <br /> questions or potential
-          projects.
-          <span className="text-primary">.</span>
+          Feel free to contact me!
+          <span className="text-primary">..</span>
         </p>
 
         <section className="relative grid place-content-center py-11 px-6">

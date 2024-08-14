@@ -19,9 +19,9 @@ import { SiGit } from "react-icons/si"; // Added for Git
 
 export default function Skills() {
   return (
-    <div className="py-10 -mt-5 mb-10 px-5">
-      <div className="py-20 -mb-11">
-        <div className="text-center mb-1">
+    <div className="py-4 -mt-5 mb-10 px-5">
+      <div className="py-20 -mb-12">
+        <div className="text-center ">
           <h1 className="text-xl font-bold">
             Languages<span className="text-primary">.</span>
           </h1>
@@ -48,7 +48,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="py-20 -mb-11">
+      <div className="py-16 -mb-12">
         <div className="text-center mb-1">
           <h1 className="text-xl font-bold">
             Libraries and Frameworks<span className="text-primary">.</span>
@@ -65,8 +65,8 @@ export default function Skills() {
         </div>
       </div>
 
-      <div className="py-20 -mb-11">
-        <div className="text-center mb-1">
+      <div className="py-16 -mb-12">
+        <div className="text-center">
           <h1 className="text-xl font-bold">
             Tools & Services<span className="text-primary">.</span>
           </h1>

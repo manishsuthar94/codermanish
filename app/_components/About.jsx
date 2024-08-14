@@ -51,20 +51,24 @@ export default function Hero() {
           </h2>
 
           <p className="text-[1.1rem] mx-auto leading-relaxed mt-2">
-          From 2024 I started my journey to be a Computer Engineer on Atmiya University, Rajkot, Gujarat. It still Running to Present.
+            From 2024 I started my journey to be a Computer Engineer on Atmiya
+            University, Rajkot, Gujarat. It still Running to Present.
           </p>
-
-
-
-
         </div>
       </div>
       <div className="flex items-center justify-center gap-3 mt-5">
         <Button asChild variant="outline">
-          <Link href="/">Explore</Link>
+          <Link
+            href="https://www.linkedin.com/in/manish-suthar-8395b4311/"
+            target="_blank"
+          >
+            My Linkedin
+          </Link>
         </Button>
         <Button asChild className="flex gap-1 items-center justify-center">
-          <Link href="https://github.com/r2hu1">My Github</Link>
+          <Link href="https://github.com/manishsuthar94/" target="_blank">
+            My Github
+          </Link>
         </Button>
       </div>
     </section>
