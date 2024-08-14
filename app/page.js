@@ -41,9 +41,8 @@ export default function Home() {
 
       <div className="flex gap-2 flex-wrap items-center justify-center md:px-20 lg:px-32 px-5">
         <Project {...projects[0]} />
-        <Project {...projects[1]} />
-        <Project {...projects[2]} />
-        {/* <Project {...projects[3]} /> */}
+        {/* <Project {...projects[1]} />
+        <Project {...projects[2]} /> */}
       </div>
 
       <div className="grid place-content-center mt-10">

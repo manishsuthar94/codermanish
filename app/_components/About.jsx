@@ -62,7 +62,7 @@ export default function Hero() {
             href="https://www.linkedin.com/in/manish-suthar-8395b4311/"
             target="_blank"
           >
-            My Linkedin
+            Linkedin
           </Link>
         </Button>
         <Button asChild className="flex gap-1 items-center justify-center">
