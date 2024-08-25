@@ -17,6 +17,8 @@ import { SiGithub } from "react-icons/si"; // GitHub icon
 import { SiC } from "react-icons/si"; // Added for C language
 import { SiGit } from "react-icons/si"; // Added for Git
 
+import {Tooltip} from "@nextui-org/tooltip";
+
 export default function Skills() {
   return (
     <div className="py-4 -mt-5 mb-10 px-5">
