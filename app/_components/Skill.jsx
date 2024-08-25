@@ -22,10 +22,10 @@ export default function Skills() {
             className="flex items-center space-x-4 p-4 border border-gray-300 rounded-lg active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95"
           >
             <skill.Icon
-              className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 lg:h-14 lg:w-14"
+              className="h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14"
               color={skill.color}
             />
-            <span className="text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-900 dark:text-gray-100">
+            <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100">
               {skill.name}
             </span>
           </div>
