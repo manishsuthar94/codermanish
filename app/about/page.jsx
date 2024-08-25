@@ -12,7 +12,7 @@ export default function Page() {
         About Me<span className="text-primary">.</span>
         </h1>
         <p className="text-xs mt-3">
-        Get to know me better - my story, interests, <br /> and aspirations<span className="text-primary">.</span>
+        Get to know me better – my story, interests, <br />  and aspirations.<span className="text-primary">.</span>
         </p>
       </div>
       <About />

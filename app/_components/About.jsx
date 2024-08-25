@@ -15,11 +15,15 @@ export default function Hero() {
         </h1>
         <div className="justified-text">
           <p className="text-[1.1rem] mx-auto leading-relaxed">
-            Hello, I'm Manish Suthar, a highly dedicated and skilled full-stack
-            web developer from India 🇮🇳, currently pursuing my Diploma in
-            Computer Engineering at Atmiya University, Rajkot, Gujarat. My dream
-            is to become a successful modern full-stack developer and secure a
-            position in a tech company.
+            Hello, I'm Manish Suthar, a passionate and skilled full-stack web
+            developer from Gujarat, India. I'm currently pursuing a{" "}
+            <span className="underline underline-offset-4 text-primary">
+              {" "}
+              Bachelor of Computer Applications (BCA){" "}
+            </span>{" "}
+            at Marwadi University, Rajkot, Gujarat. My ambition is to become a
+            successful full-stack developer and secure a prominent position in a
+            leading tech company.
           </p>
 
           <h2 className="md:text-4xl lg:text-2xl text-xl font-bold mt-3">
@@ -27,32 +31,38 @@ export default function Hero() {
             Education{" "}
           </h2>
 
-          <p className="text-[1rem] mx-auto leading-relaxed mt-5">
+          <p className="text-[1rem] mx-auto leading-relaxed mt-5 font-bold text-primary">
             2023 to Present{" "}
           </p>
+
           <h2 className="md:text-4xl lg:text-xl text-xl font-bold mt-1 ">
             {" "}
             Self Taught (Programming){" "}
           </h2>
 
           <p className="text-[1.1rem] mx-auto leading-relaxed mt-2 mb-2">
-            Since 2023 I started to learn Programming. I have learn Html, Css,
-            JavaScript, Reactjs, Bootstrap, Python and More.
+            In 2023, I began my programming journey, mastering languages and
+            frameworks such as{" "}
+            <span className="text-primary">
+              {" "}
+              HTML, CSS, JavaScript, C, React.js, Bootstrap, Python,{" "}
+            </span>{" "}
+            and more.
           </p>
 
           <hr />
 
-          <p className="text-[1rem] mx-auto leading-relaxed mt-2">
+          <p className="text-[1rem] mx-auto leading-relaxed mt-2 font-bold text-primary">
             2024 to Present{" "}
           </p>
           <h2 className="md:text-4xl lg:text-xl text-xl font-bold mt-1 ">
             {" "}
-            Diploma In Computer Engineering{" "}
+            Bachelor of Computer Applications (BCA){" "}
           </h2>
 
           <p className="text-[1.1rem] mx-auto leading-relaxed mt-2">
-            From 2024 I started my journey to be a Computer Engineer on Atmiya
-            University, Rajkot, Gujarat. It still Running to Present.
+            In 2024, I started my BCA at Marwadi University, Rajkot, Gujarat,
+            where I am currently continuing my studies.
           </p>
         </div>
       </div>
