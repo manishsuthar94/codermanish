@@ -62,3 +62,71 @@
   text-align: justify;
   hyphens: auto;
 }
+
+
+
+
+
+
+
+
+/* Global styles or relevant stylesheet */
+.gradient-text {
+  position: relative;
+  display: inline-block;
+  background: linear-gradient(
+    45deg,
+    #2cdfff,
+    #d518ee,
+    #7c3aed,
+    #f17ae2
+  ); /* Gradient colors */
+  background-size: 400% 400%; /* Ensures the gradient covers the element */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 5s ease infinite;
+}
+
+/* Underline effect */
+.gradient-text::after {
+  content: "";
+  position: absolute;
+  bottom: -1px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Thickness of the underline */
+  background: linear-gradient(
+    45deg,
+    #2cdfff,
+    #d518ee,
+    #7c3aed,
+    #f17ae2
+  ); /* Same gradient colors as the text */
+  background-size: 400% 400%; /* Ensures the gradient covers the underline */
+  animation: underline-animation 5s ease infinite;
+  z-index: -1; /* Place the underline behind the text */
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes underline-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
