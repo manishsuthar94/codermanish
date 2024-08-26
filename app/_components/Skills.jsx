@@ -17,7 +17,7 @@ export default function Skills() {
     { Icon: IoLogoCss3, color: "#2862e9", name: "CSS" },
     { Icon: SiJavascript, color: "#ecda1d", name: "JavaScript" },
     { Icon: SiC, color: "#A8B9CC", name: "C" },
-    { Icon: DiPython, color: "#3776AB", name: "Python" },
+    { Icon: DiPython, color: "#3776AB", name: "Python (Basic)" },
   ];
 
   const frameworks = [
