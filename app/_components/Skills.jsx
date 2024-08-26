@@ -1,92 +1,162 @@
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiJavascript } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
-import { SiTailwindcss } from "react-icons/si";
-import { DiNodejs } from "react-icons/di";
+import { SiJavascript } from "react-icons/si";
+import { SiC } from "react-icons/si";
+import { DiPython } from "react-icons/di";
+import { SiBootstrap } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
-import { DiMongodb } from "react-icons/di";
-import { FaDocker } from "react-icons/fa";
-import { SiAppwrite } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
-import { DiPython } from "react-icons/di"; // Added for Python
-import { SiBootstrap } from "react-icons/si"; // Added for Bootstrap
-import { SiVisualstudiocode } from "react-icons/si"; // Added for VS Code
-import { SiRedux } from "react-icons/si"; // Added for Redux
-import { SiGithub } from "react-icons/si"; // GitHub icon
-import { SiC } from "react-icons/si"; // Added for C language
-import { SiGit } from "react-icons/si"; // Added for Git
+import { SiVisualstudiocode } from "react-icons/si";
+import { SiGit } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
 
-import {Tooltip} from "@nextui-org/tooltip";
+import { Tooltip } from "@nextui-org/tooltip";
 
 export default function Skills() {
+  const languages = [
+    { Icon: FaHtml5, color: "#dd4b24", name: "HTML" },
+    { Icon: IoLogoCss3, color: "#2862e9", name: "CSS" },
+    { Icon: SiJavascript, color: "#ecda1d", name: "JavaScript" },
+    { Icon: SiC, color: "#A8B9CC", name: "C" },
+    { Icon: DiPython, color: "#3776AB", name: "Python" },
+  ];
+
+  const frameworks = [
+    { Icon: SiBootstrap, color: "#7952B3", name: "Bootstrap" },
+    { Icon: FaReact, color: "#5ed3f3", name: "React" },
+  ];
+
+  const tools = [
+    { Icon: SiVisualstudiocode, color: "#007ACC", name: "VS Code" },
+    { Icon: SiGit, color: "#F05032", name: "Git" },
+    { Icon: SiGithub, color: "#211F1F", name: "GitHub" },
+  ];
+
   return (
     <div className="py-4 -mt-5 mb-10 px-5">
+      {/* Languages Section */}
       <div className="py-20 -mb-12">
-        <div className="text-center ">
-          <h1 className="text-xl font-bold">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold ">
             Languages<span className="text-primary">.</span>
           </h1>
         </div>
       </div>
 
-      <div className="flex gap-3 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <FaHtml5 className="h-10 w-10" color="#dd4b24" />
-        </div>
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <IoLogoCss3 className="h-10 w-10" color="#2862e9" />
-        </div>
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <SiJavascript className="h-10 w-10" color="#ecda1d" />
-        </div>
-
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <SiC className="h-10 w-10" color="#A8B9CC" />
-        </div>
-
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <DiPython className="h-10 w-10" color="#3776AB" />
-        </div>
+      <div className="flex gap-6 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
+        {languages.map((skill, index) => (
+          <Tooltip
+            key={index}
+            placement="top"
+            showArrow
+            content={
+              <div className="flex items-center space-x-2">
+                <skill.Icon className="h-6 w-6" color={skill.color} />
+                <span>{skill.name}</span>
+              </div>
+            }
+            classNames={{
+              base: ["before:bg-gray-600 dark:before:bg-gray-300"],
+              content: [
+                "flex items-center bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg",
+                "font-medium text-sm",
+              ],
+            }}
+          >
+            <div className="flex items-center space-x-4 p-4 border border-gray-300 rounded-lg active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+              <skill.Icon
+                className="h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14"
+                color={skill.color}
+              />
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100">
+                {skill.name}
+              </span>
+            </div>
+          </Tooltip>
+        ))}
       </div>
 
+      {/* Libraries and Frameworks Section */}
       <div className="py-16 -mb-12">
         <div className="text-center mb-1">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-2xl font-bold">
             Libraries and Frameworks<span className="text-primary">.</span>
           </h1>
         </div>
       </div>
 
-      <div className="flex gap-3 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <SiBootstrap className="h-10 w-10" color="#7952B3" />
-        </div>
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <FaReact className="h-10 w-10" color="#5ed3f3" />
-        </div>
+      <div className="flex gap-6 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
+        {frameworks.map((skill, index) => (
+          <Tooltip
+            key={index}
+            placement="top"
+            showArrow
+            content={
+              <div className="flex items-center space-x-2">
+                <skill.Icon className="h-6 w-6" color={skill.color} />
+                <span>{skill.name}</span>
+              </div>
+            }
+            classNames={{
+              base: ["before:bg-gray-600 dark:before:bg-gray-300"],
+              content: [
+                "flex items-center bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg",
+                "font-medium text-sm",
+              ],
+            }}
+          >
+            <div className="flex items-center space-x-4 p-4 border border-gray-300 rounded-lg active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+              <skill.Icon
+                className="h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14"
+                color={skill.color}
+              />
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100">
+                {skill.name}
+              </span>
+            </div>
+          </Tooltip>
+        ))}
       </div>
 
+      {/* Tools & Services Section */}
       <div className="py-16 -mb-12">
         <div className="text-center">
-          <h1 className="text-xl font-bold">
+          <h1 className="text-2xl font-bold">
             Tools & Services<span className="text-primary">.</span>
           </h1>
         </div>
       </div>
 
-      <div className="flex gap-3 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <SiVisualstudiocode className="h-10 w-10" color="#007ACC" />
-        </div>
-
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <SiGit className="h-10 w-10" color="#F05032" />
-        </div>
-
-        <div className="h-24 w-24 grid place-items-center rounded-md border active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
-          <SiGithub className="h-10 w-10" color="#211F1F" />
-        </div>
+      <div className="flex gap-6 flex-wrap items-center justify-center rounded-md max-w-3xl mx-auto">
+        {tools.map((skill, index) => (
+          <Tooltip
+            key={index}
+            placement="top"
+            showArrow
+            content={
+              <div className="flex items-center space-x-2">
+                <skill.Icon className="h-6 w-6" color={skill.color} />
+                <span>{skill.name}</span>
+              </div>
+            }
+            classNames={{
+              base: ["before:bg-gray-600 dark:before:bg-gray-300"],
+              content: [
+                "flex items-center bg-gray-800 text-white py-2 px-4 rounded-lg shadow-lg",
+                "font-medium text-sm",
+              ],
+            }}
+          >
+            <div className="flex items-center space-x-4 p-4 border border-gray-300 rounded-lg active:bg-secondary md:hover:bg-secondary transition cursor-pointer hover:scale-95">
+              <skill.Icon
+                className="h-10 w-10 sm:h-12 sm:w-12 md:h-12 md:w-12 lg:h-14 lg:w-14"
+                color={skill.color}
+              />
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl font-semibold text-gray-900 dark:text-gray-100">
+                {skill.name}
+              </span>
+            </div>
+          </Tooltip>
+        ))}
       </div>
     </div>
   );
