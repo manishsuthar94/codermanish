@@ -8,11 +8,14 @@ import { Tooltip } from "@nextui-org/tooltip";
 
 export default function Skills() {
   const skills = [
-    { Icon: FaHtml5, color: "#dd4b24", name: "HTML" },
-    { Icon: IoLogoCss3, color: "#2862e9", name: "CSS" },
-    { Icon: SiBootstrap, color: "#7952B3", name: "Bootstrap" },
     { Icon: SiJavascript, color: "#ecda1d", name: "JavaScript" },
     { Icon: FaReact, color: "#5ed3f3", name: "React" },
+    { Icon: SiBootstrap, color: "#7952B3", name: "Bootstrap" },
+    { Icon: FaHtml5, color: "#dd4b24", name: "HTML" },
+    { Icon: IoLogoCss3, color: "#2862e9", name: "CSS" },
+    
+   
+   
   ];
 
   return (
